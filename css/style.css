@@ -463,10 +463,12 @@ transform: translateY(-10px);
     width: 100%;
 }
 .port-item:hover .git-icon{
-    top: 50%;
+    bottom: 0;
+    left: 10px;
 }
 .port-item:hover .visit-icon{
-    bottom: 50%;
+    bottom: 0;
+    left: 50px;
 }
 .port-item:hover{
     transform: translateY(-15px);
@@ -485,17 +487,14 @@ transform: translateY(-10px);
 }
 .git-icon{
     position: absolute;
-    left: 10%;
-    
-    top: -100%;
-    transform: translateY(-50%);
+    left: -100%;
+    bottom: 10px !important;
     color: rgb(21, 32, 43);
     transition: all 0.6s 0.6s;
-    
 }
 .port-item i{
     color: #0099ff;
-   
+   font-size: 30px !important;
 }
 @media (max-width:767px){
     .port-item i{
@@ -512,12 +511,10 @@ transform: translateY(-10px);
 }
 .visit-icon{
     position: absolute;
-    right: 10%;
-   
-    bottom: -100%;
-    transform: translateY(50%);
+    left: -100%;
+    bottom: 10px !important;
     color: rgb(21, 32, 43);
-    transition: all 0.6s 0.6s;
+    transition: all 0.6s ;
 }
 .nameis{
     position: absolute;
@@ -723,4 +720,17 @@ body{
     box-shadow: none !important;
     border: none !important;
     outline: none !important;
+} 
+
+::-webkit-scrollbar{
+    width: 12px;
 }
+
+::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0099ff;
+}   
+  

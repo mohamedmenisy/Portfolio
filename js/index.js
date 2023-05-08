@@ -42,7 +42,7 @@ var typed = new Typed('.typedEll', {
   }
   })
 
-$('.load').delay(3500).fadeOut(1000,()=>{
+$('.load').delay(2500).fadeOut(1000,()=>{
   $('body').css({'overflow':'visible'})
   $('#about').fadeIn()
   $('#projects').fadeIn()
