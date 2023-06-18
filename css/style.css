@@ -723,11 +723,11 @@ body{
 } 
 
 ::-webkit-scrollbar{
-    width: 12px;
+    width: 4px;
 }
 
 ::-webkit-scrollbar-track{
-    background-color: #fff;
+    background-color: rgb(21, 32, 43);
 }
 
 ::-webkit-scrollbar-thumb{
